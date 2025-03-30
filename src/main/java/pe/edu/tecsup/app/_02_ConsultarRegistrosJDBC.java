@@ -5,14 +5,9 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-// import static pe.edu.tecsup.app.Parametros.*;
+import static pe.edu.tecsup.app.Parametros.*;
 
 public class _02_ConsultarRegistrosJDBC {
-
-	// ENGINE : MYSQL  [jdbc:<<engine>>:<<port>>//<<IP o DOMINIO >>/<<SCHEMA>>?<<PARAMETROS OPCIONALES>> ]
-	static final String URL = "jdbc:mysql://localhost/almacen?useSSL=false";
-	static final String USERNAME = "root";
-	static final String PASSWORD = "";
 
 	/**
 	 *   
