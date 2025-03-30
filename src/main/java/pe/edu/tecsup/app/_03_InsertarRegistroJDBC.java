@@ -24,11 +24,11 @@ public class _03_InsertarRegistroJDBC {
 			PreparedStatement stmt = con.prepareStatement(sql);
 			
 		    // Preparar los datos a Ingresar
-			stmt.setString(1, "Portatiles");              // corresponde al nombre
-			stmt.setString(2, "Portatiles de Gama Alta"); // corresponde a la descripcion
+			stmt.setString(1, "Tarjetas de Video");              // corresponde al nombre
+			stmt.setString(2, "Tarjetas de Video NVIDIA"); // corresponde a la descripcion
 			stmt.setInt(3, 4);                            // corresponde al orden
 			
-			
+
 			// Ejecutar la insercion
 			int estado = stmt.executeUpdate(); 
 			
@@ -36,7 +36,7 @@ public class _03_InsertarRegistroJDBC {
 			if (estado != 1)
 				throw new SQLException("No se pudo insertar");
 			
-			/*
+			// /*
 			// Obtener el ultimo id
 			int id = 0;
 			sql = "SELECT last_insert_id()"; 
