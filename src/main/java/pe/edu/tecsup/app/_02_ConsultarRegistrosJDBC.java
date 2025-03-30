@@ -16,7 +16,9 @@ public class _02_ConsultarRegistrosJDBC {
 	public static void main(String[] args) {
 		
 		try {
-			
+			// 1. Cargar el driver en memoria
+			Class.forName("com.mysql.cj.jdbc.Driver");
+
 			// Conectarme a la BD
 			Connection con 
 				= DriverManager.getConnection(URL, USERNAME, PASSWORD);
