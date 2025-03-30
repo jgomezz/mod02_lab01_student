@@ -21,7 +21,12 @@
             <artifactId>mysql-connector-j</artifactId>
             <version>9.0.0</version>
         </dependency>
-
+        <!-- Protobuf Java (to fix CVE-2024-7254) -->
+        <dependency>
+            <groupId>com.google.protobuf</groupId>
+            <artifactId>protobuf-java</artifactId>
+            <version>4.28.2</version> <!-- Fixed version to mitigate CVE-2024-7254 -->
+        </dependency>
     </dependencies>
 
 
